@@ -1,0 +1,71 @@
+/* ============================
+   Task Card Styles
+============================ */
+.task-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.task-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  opacity: 0.9;
+}
+
+/* Color codes by status */
+.task-card.pending {
+  border-left: 6px solid #ffcc00;
+}
+
+.task-card.in-progress {
+  border-left: 6px solid #0099ff;
+}
+
+.task-card.completed {
+  border-left: 6px solid #00e676;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.actions button:hover {
+  transform: scale(1.05);
+}
+
+.actions .delete {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+}
+
+.actions button:not(.delete) {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+}

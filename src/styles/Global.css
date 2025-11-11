@@ -1,0 +1,31 @@
+/* ============================
+   Global Styles
+============================ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+:root {
+  --primary: #6a11cb;
+  --secondary: #2575fc;
+  --bg-light: #f5f7fa;
+  --text-dark: #222;
+  --glass: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  min-height: 100vh;
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s ease;
+}

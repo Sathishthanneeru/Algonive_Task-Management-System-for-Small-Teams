@@ -1,0 +1,69 @@
+/* ============================
+   SignIn / SignUp Page Styles
+============================ */
+.auth-container {
+  width: 360px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.6s ease;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 14px;
+}
+
+.auth-container input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.auth-container button:hover {
+  transform: scale(1.05);
+}
+
+.auth-container p {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.error {
+  color: #ffb3b3;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
