@@ -41,7 +41,7 @@ import React, { useContext, useState } from "react";
 import { TaskContext } from "../context/TaskContext";
 import TaskForm from "../components/TaskForm";
 import TaskCard from "../components/TaskCard";
-import Notification from "../components/Notification"; // ✅ Import Notification
+import Notification from "../components/Notification";
 import "../styles/Dashboard.css";
 
 function Dashboard() {
@@ -99,6 +99,7 @@ function Dashboard() {
             <TaskCard key={i} task={task} setTasks={setTasks} tasks={tasks} />
           ))
         )}
+        
       </div>
     </div>
   );
