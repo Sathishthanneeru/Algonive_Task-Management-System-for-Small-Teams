@@ -1,6 +1,4 @@
-/* ============================
-   Notification Styles
-============================ */
+
 .notification-container {
   position: fixed;
   top: 90px;
@@ -22,7 +20,6 @@
   animation: slideIn 0.5s ease, fadeOut 0.5s ease 5s forwards;
 }
 
-/* Slide-in animation */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -34,7 +31,6 @@
   }
 }
 
-/* Auto fade-out */
 @keyframes fadeOut {
   to {
     opacity: 0;

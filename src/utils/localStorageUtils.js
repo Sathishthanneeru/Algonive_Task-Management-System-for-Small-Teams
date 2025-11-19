@@ -1,9 +1,4 @@
-// ================================
-// localStorage.js
-// Utility for handling Local Storage safely and cleanly
-// ================================
 
-// Save data to localStorage
 export const saveToLocal = (key, data) => {
   try {
     localStorage.setItem(key, JSON.stringify(data));
@@ -12,7 +7,6 @@ export const saveToLocal = (key, data) => {
   }
 };
 
-// Retrieve data from localStorage
 export const getFromLocal = (key) => {
   try {
     const stored = localStorage.getItem(key);
@@ -23,7 +17,6 @@ export const getFromLocal = (key) => {
   }
 };
 
-// Remove specific key
 export const removeFromLocal = (key) => {
   try {
     localStorage.removeItem(key);
@@ -32,7 +25,6 @@ export const removeFromLocal = (key) => {
   }
 };
 
-// Clear all localStorage (optional use on logout)
 export const clearLocalStorage = () => {
   try {
     localStorage.clear();

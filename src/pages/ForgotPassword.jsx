@@ -14,7 +14,6 @@ function ForgotPassword() {
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^()_+=-]).{8,}$/;
 
-  // Step 1: Verify email
   const handleEmailSubmit = (e) => {
     e.preventDefault();
     if (!emailRegex.test(email)) {
@@ -34,7 +33,6 @@ function ForgotPassword() {
     setStep(2); // Go to password reset step
   };
 
-  // Step 2: Reset password
   const handlePasswordReset = (e) => {
     e.preventDefault();
 

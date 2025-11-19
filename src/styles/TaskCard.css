@@ -1,6 +1,4 @@
-/* ============================
-   Task Card Styles
-============================ */
+
 .task-card {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 15px;
@@ -28,7 +26,6 @@
   opacity: 0.9;
 }
 
-/* Color codes by status */
 .task-card.pending {
   border-left: 6px solid #ffcc00;
 }
